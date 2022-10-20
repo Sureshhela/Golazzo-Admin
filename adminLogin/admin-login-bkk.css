@@ -1,0 +1,215 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.login-container{
+    height: 100vh;
+    min-height: 320px;
+    background: url('../assets/login-back-ground.JPG');
+    background-repeat: no-repeat;
+    padding: 5px 5px;
+    background-size: cover;
+    background-position: center;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 10px;
+    position: sticky;
+    top: 0;
+}
+.logo img{
+    height: 10%;
+    width: 10%;
+}
+
+.login{
+    width: 100%;
+    height: 80%;
+    min-width: 320px;
+    min-height: auto;
+    display: flex;
+    justify-content: center;
+
+}
+
+.login-form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: transparent;
+    width: 55%;
+    height: 100%;
+    padding: 1px 1px;
+    box-shadow: -20px 20px 20px rgba(0,0,0,0.3);
+    border-radius: 20px;
+}
+
+.login-form .heading{
+    margin-top: 1rem;
+    padding: 10px 10px;
+    text-align: center;
+}
+
+.login-form .heading h1{
+    font-family: 'Poppins';
+    font-size: 50px;
+    font-style: normal;
+    color: #271835;
+    font-weight: 40px;
+}
+
+.login-form .heading h4{
+    margin-top: 1.5rem;
+    font-family: 'Roboto';
+    font-size: 25px;
+    font-style: normal;
+    color: #5C5F65;
+}
+
+.login-form form{
+    width: 75%;
+    padding: 20px 20px;
+}
+
+.login-form form input{
+   border: 2px solid;
+   border-color: black;
+   border-radius: 50px;
+   height: 3rem;
+}
+
+.login-form form input[type = "password"]{
+    background-color: #F1EBF7;
+ }
+
+ .login button{
+    border: 0px, solid;
+    border-color: transparent;
+    background-color: #7636B0;
+    width: 50%;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-size: 20px;
+    border-radius: 50px;
+    margin-bottom: 1rem;
+ }
+
+ .login a {
+    text-decoration: none;
+    font-family: 'Roboto';
+    font-style: normal;
+    color: #BEB0D0;
+    opacity: .6;
+    transition: opacity .3s ease;
+ }
+
+.login a:hover{
+ opacity: 1;
+}
+
+/* Updated (22.08.22): Media qurey for mobile phone checked on iphone:Se */
+@media (max-width: 500px){
+
+    .login-container{
+        height: 100vh;
+        padding: 5px 5px;
+        background: url('../assets/loginBackGround.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .logo{
+        margin-top: 1rem;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 2px 2px;
+        position: sticky;
+        top: 0;
+    }
+
+    .logo img{
+        position: relative;
+        height: 10%;
+        width: 20%;
+    }
+
+    .login-form{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background: transparent;
+        width: 100%;
+        padding: 5px 5px;
+        box-shadow: -10px 10px 10px rgba(0,0,0,0.3);
+        border-radius: 20px;
+    }
+
+    .login-form .heading{
+        margin-top: 1rem;
+        padding: 5px 5px;
+        text-align: center;
+    }
+    
+    .login-form .heading h1{
+        font-family: 'Poppins';
+        font-size: 30px;
+        font-style: normal;
+        color: #271835;
+        font-weight: 20px;
+    }
+    
+    .login-form .heading h4{
+        margin-top: 1.5rem;
+        font-family: 'Roboto';
+        font-size: 20px;
+        font-style: normal;
+        color: #5C5F65;
+    }
+
+    .login-form form{
+        width: 85%;
+        padding: 10px 10px;
+    }
+
+    .login-form form input{
+        border: 1px solid;
+        border-color: black;
+        border-radius: 50px;
+        height: 2rem;
+     }
+
+     .login button{
+        border: 0px, solid;
+        border-color: transparent;
+        background-color: #7636B0;
+        width: 78%;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-size: 15px;
+        border-radius: 50px;
+        margin-bottom: 1rem;
+     }
+    
+     .login a {
+        text-decoration: none;
+        font-family: 'Roboto';
+        font-style: normal;
+        color: #BEB0D0;
+        opacity: .6;
+        transition: opacity .3s ease;
+     }
+    
+    .login a:hover{
+     opacity: 1;
+    }
+}

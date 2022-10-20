@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- ===== BOX ICONS ===== -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.datatables.net/1.12.1/css/dataTables.bootstrap4.min.css"
+    />
+
+    <!-- ===== CSS ===== -->
+    <link rel="stylesheet" href="../main.css" />
+
+    <title>Dashboard</title>
+  </head>
+  <body>
+    <div class="adminDashboard" id="body-pd">
+      <!-- ****** header start ****** -->
+
+      <header class="header" id="header">
+        <!-- <div class="header__toggle">
+          <i class="bx bx-menu" id="header-toggle"></i>
+        </div> -->
+        <div class="header__img">
+          <img src="../assets/Group20.png" alt="" />
+        </div>
+        <div class="dropdown" data-dropdown>
+          <button class="d-link" data-dropdown-button>Admin</button>
+          <div class="dropdown-menu info-grid">
+            <div class="changePassword">
+              <i class="bx bxs-lock nav__icon"></i>
+              <a href="#">Change Password</a>
+            </div>
+            <div class="admin-profile">
+              <i class="bx bx-user nav__icon"></i>
+              <a href="#">Profile</a>
+            </div>
+            <div class="logOut">
+              <i class="bx bx-log-out nav__icon"></i>
+              <a href="#">Log Out</a>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- ******** header end  ********* -->
+
+      <!-- ***** side-Bar start *****-->
+
+      <div class="l-navbar" id="nav-bar">
+        <nav class="nav">
+          <div>
+            <a href="#" class="nav__link nav__logo">
+              <i class="bx bx-user-circle nav__icon" id="header-toggle"></i>
+              <span class="nav__logo-name">Admin</span>
+            </a>
+
+            <div class="nav__list">
+              <a href="../users-table/user-table.html" class="nav__link active">
+                <i class="bx bx-user nav__icon"></i>
+                <span class="nav__name">User Management</span>
+              </a>
+
+              <a href="../support/support.html" class="nav__link active">
+                <i class="fa fa-handshake-o"></i>
+                <span class="nav__name">Support</span>
+              </a>
+
+              <a href="../transactions/transaction.html" class="nav__link active">
+                <i class="fa fa-money"></i>
+                <span class="nav__name">Transactions</span>
+              </a>
+
+              <!-- <a href="#" class="nav__link">
+                            
+                            <span class="nav__name">Profile</span>
+                        </a>
+                        
+                        <a href="#" class="nav__link">  
+                            
+                            <span class="nav__name">Support</span>
+                        </a>
+
+                        <a href="#" class="nav__link">
+                           
+                            <span class="nav__name">Terms & Conditions</span>
+                        </a> -->
+
+              <!-- <div class="nav__dropdown">
+                <a href="#" class="nav__link">
+                  <i class="bx bx-brightness nav__icon nav__dropdown-icon"></i>
+                  <span class="nav__name">Settings</span>
+                </a>
+
+                <div class="nav__dropdown-collapse">
+                  <div class="nav__dropdown-content">
+                    <a href="#" class="nav__dropdown-item">Change Password</a>
+                    <a href="#" class="nav__dropdown-item">Delete Account</a>
+                  </div>
+                </div>
+              </div> -->
+            </div>
+          </div>
+
+          <a href="#" class="nav__link">
+            <i class="bx bx-log-out nav__icon"></i>
+            <span class="nav__name">Log Out</span>
+          </a>
+        </nav>
+      </div>
+
+      <!-- ***** Sidebar end  *****-->
+
+      <div class="optionsContainer">
+            <div class="dashboardOptions">
+                <div class="options play">
+
+                 <img src="../assets/Play-buuton.png" alt="play"> PLAY</img>
+                
+                 
+                </div>
+
+                <div class="options profile">
+
+                    <a href="../Profile/profile.html">
+                        <img src="../assets/Profile-button.png" alt="profile">PROFILE</img>
+                    </a>
+                    
+                </div>
+
+                <div class="options term-condions">
+
+                    <img src="../assets/Terms-conditions-button.png" alt="T&C">T&C</img>
+
+                </div>
+
+                <div class="options support">
+
+                    <img src="../assets/Support-button.png" alt="support">SUPPORT</img>
+                
+                </div>
+
+                <div class="options game-rules">
+
+                    <img src="../assets/Game-rules-button.png" alt="Game Rules">RULES</img>
+
+                </div>
+
+                <div class="options results">
+
+                    <img src="../assets/Results-button.png" alt="results">RESULTS</img>
+
+                </div>
+    
+            </div>
+        </div> 
+    </div>
+    <!--===== MAIN JS =====-->
+    <script src="../main.js" defer></script>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.12.1/js/dataTables.bootstrap4.min.js"></script>
+  </body>
+</html>
